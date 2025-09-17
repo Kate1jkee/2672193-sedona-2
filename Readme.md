@@ -2,7 +2,7 @@
 
 * Студент: [Екатерина Протопопова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2672193).
 * Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
-
+* Сайт: [Учебный проект 1](https://kate1jkee.github.io/2672193-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
