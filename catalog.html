@@ -4,255 +4,277 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Гостиницы Седоны</title>
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
 
     <body>
-        <header class="page__header">
+        <header class="page_header">
             <a href="index.html">
-                <img class="page__header" src="images/header_&_footer/site_logo.svg" width="140" height="70" alt="Логотип сайта">
+                <img class="page_header" src="images/header_&_footer/site_logo.svg" width="140" height="70"
+                    alt="Логотип сайта">
             </a>
-            <nav class="navigation__page">
-                <ul class="novigatioт__list">
-                    <li class="novigatio__iteam">
-                        <a class="navigation__link" href="index.html">Главная</a>
+            <nav class="navigation_page">
+                <ul class="navigatioт_list">
+                    <li class="navigatio_iteam">
+                        <a class="navigation_link" href="index.html">Главная</a>
                     </li>
-                    <li class="navigation__iteam">
-                        <a class="navigation__link" href="#">О седоне</a>
+                    <li class="navigation_iteam">
+                        <a class="navigation_link" href="#">О седоне</a>
                     </li>
-                    <li class="navigation__iteam">
-                        <a class="navigation link navigation__link__current" href="catalog.html"
+                    <li class="navigation_iteam">
+                        <a class="navigation_link navigation_link_current" href="catalog.html"
                             aria-current="page">Гостиницы</a>
                     </li>
                 </ul>
-                <ul class="navigation__list">
-                    <li class="navigation__iteam">
-                        <a class="navigation__link" href="#">
-                            <span class="visually__hidden">Поиск</span>
+                <ul class="navigation_list">
+                    <li class="navigation_iteam">
+                        <a class="navigation_link" href="#">
+                            <span class="visually_hidden">Поиск</span>
                         </a>
                     </li>
-                    <li class="navigation__iteam">
-                        <a class="navigation__link" href="#">
-                            <span class="visually__hidden">Избранное</span>
-                            <span class="visually__hidden">В избранное добавлено</span>12<span
-                                class="visually__hidden">отелей</span>
+                    <li class="navigation_iteam">
+                        <a class="navigation_link" href="#">
+                            <span class="visually_hidden">Избранное</span>
+                            <span class="visually_hidden">В избранное добавлено</span>
+                            <span class="like_number">12</span>
+                            <span class="visually_hidden">отелей</span>
                         </a>
                     </li>
-                    <li class="navigation__iteam">
-                        <a class="navigation__link button" href="#">Хочу сюда
+                    <li class="navigation_iteam">
+                        <a class="navigation_link button" href="#">Хочу сюда
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="main__inner">
-            <header class="inner__header">
-                <h1 class="inner__title">Гостиницы Седоны</h1>
+        <main class="main_inner">
+            <header class="inner_header">
+                <h1 class="inner_title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="index.html">
-                            <span class="visually__hidden">Переход на главную страницу</span>
+                    <li class="breadcrumbs_item">
+                        <a class="breadcrumbs_link" href="index.html">
+                            <span class="visually_hidden">Переход на главную страницу</span>
                         </a>
                     </li>
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link">Гостиницы</a>
+                    <li class="breadcrumbs_item">
+                        <a class="breadcrumbs_link">Гостиницы</a>
                     </li>
                 </ul>
-                <h2 class="visually__hidden">Перечень фильтров для поиска отелей</h2>
-                <form class="filter__list" action="https://echo.htmlacademy.ru/" method="get">
+                <h2 class="visually_hidden">Перечень фильтров для поиска отелей</h2>
+                <form class="filter_list" action="https://echo.htmlacademy.ru/" method="get">
 
-                    <fieldset class="filter__list__options">
-                        <legend class="filter__list__title">Инфраструктура:</legend>
+                    <fieldset class="filter_list_options">
+                        <legend class="filter_list_title">Инфраструктура:</legend>
                         <label class="control">
-                            <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                            <input class="control_input" type="checkbox" name="swimming-pool" checked>
                             Бассейн
                         </label>
                         <label class="control">
-                            <input class="control-input" type="checkbox" name="parking" checked>
+                            <input class="control_input" type="checkbox" name="parking" checked>
                             Парковка
                         </label>
                         <label class="control">
-                            <input class="control-input" type="checkbox" name="wi-fi">
+                            <input class="control_input" type="checkbox" name="wi-fi">
                             WI-FI
                         </label>
                     </fieldset>
-
-                    <fieldset class="filter__list__options">
-                        <legend class="filter__list__title">Тип жилья</legend>
+                    <fieldset class="filter_list_options">
+                        <legend class="filter_list_title">Тип жилья</legend>
                         <label class="control">
-                            <input class="control__input" type="radio" name="housing__tipe" value="hotel" checked>
+                            <input class="control_input" type="radio" name="housing_tipe" value="hotel" checked>
                             Гостиница
                         </label>
                         <label class="control">
-                            <input class="control__input" type="radio" name="housing__tipe" value="motel" checked>
+                            <input class="control_input" type="radio" name="housing_tipe" value="motel" checked>
                             Мотель
                         </label>
                         <label class="control">
-                            <input class="control__input" type="radio" name="housing__tipe" value="apartments" checked>
+                            <input class="control_input" type="radio" name="housing_tipe" value="apartments" checked>
                             Апартаменты
                         </label>
                     </fieldset>
-                    <button class="button" type="submit">Применить</button>
-                    <button class="button" type="reset">Сбросить</button>
+                    <div class="price_filter">
+                        <label class="filter_list_title">Стоимость, ₽:</label>
+                        <div class="price_filter_input-wrapper">
+                            <input type="number" class="price_filter_input" value="0" placeholder="От" />
+                            <span class="price_filter_placeholder">от</span>
+                        </div>
+                        <div class="price_filter_input-wrapper">
+                            <input type="number" class="price_filter_input" value="9000" placeholder="До" />
+                            <span class="price_filter_placeholder">до</span>
+                        </div>
+                    </div>
+
+                    <div class="price-filter_slider">
+                        <input type="range" min="0" value="0" class="price_filter_range" />
+                        <input type="range" min="0" value="9000" class="price_filter_range" />
+                    </div>
+                    </div>
+                    <button class="control_button active_button" type="submit">Применить</button>
+                    <button class="control_button" type="reset">Сбросить</button>
                 </form>
             </header>
             <section class="catalog">
-                <h2 class="catalog__title">Найдено гостиниц:<span class=catalog__text> 38</span></h2>
-                <select class="catalog__filter" aria-label="Сортировка">
+                <h2 class="catalog_title">Найдено гостиниц:<span class=catalog_text> 38</span></h2>
+                <select class="catalog_filter_text" aria-label="Сортировка">
                     <option value="cheap">Сначала дешевые</option>
                     <option value="expensive">Сначала дорогие</option>
                     <option value="popular">Сначала популярные</option>
                 </select>
-                <div class="catalog__filter">
+                <div class="catalog_filter">
                     <a class="button" href="catalog.html?view=tile">
-                        <span class="visually__hidden">Показать карточки</span>
+                        <span class="visually_hidden">Показать карточки</span>
                     </a>
                     <a class="button" href="catalog.html?view=card">
-                        <span class="visually__hidden">Показать одиночно</span>
+                        <span class="visually_hidden">Показать одиночно</span>
                     </a>
                     <a class="button" href="catalog.html?view=list">
-                        <span class="visually__hidden">Показать списком</span>
+                        <span class="visually_hidden">Показать списком</span>
                     </a>
                 </div>
             </section>
             <section>
 
-                <ul class="card__list">
-                    <li class="card__item">
-                        <a class="card__link" href="#" tabindex="-1">
-                            <img class="card__picture" src="images/main/hotel-1.jpg" width="300" height="212" alt="Ущелье">
-                            <h3 class="card__title" lang="en">Amara Resort & Spa</h3>
+                <ul class="card_list">
+                    <li class="card_item">
+                        <a class="card_link" href="#" tabindex="-1">
+                            <img class="card_picture" src="images/main/hotel-1.jpg" width="300" height="212"
+                                alt="Ущелье">
+                            <h3 class="card_title" lang="en">Amara Resort & Spa</h3>
                         </a>
-                        <div class="card__price">
-                            <span class="card__price">Гостиница</span>
-                            <b class="card__price">От 4000 ₽</b>
+                        <div class="card_price">
+                            <span class="card_price">Гостиница</span>
+                            <b class="card_price">От 4000 ₽</b>
                         </div>
-                        <div class="card__wishlist">
-                            <a class="card__link" href="#">Подробнее</a>
-                            <button class="card__wishlist">В избранное</button>
+                        <div class="card_wishlist">
+                            <a class="card_link" href="#">Подробнее</a>
+                            <button class="card_wishlist">В избранное</button>
                         </div>
-                        <div class="card__level">
-                            <span class="visually__hidden">Четырехзвездочный отель</span>
-                            <p class="card__level__text">Рейтинг:<span> 8,5</span></p>
+                        <div class="card_level">
+                            <span class="visually_hidden">Четырехзвездочный отель</span>
+                            <p class="card_level_text">Рейтинг:<span> 8,5</span></p>
                         </div>
                     </li>
-                    <li class="card__item">
-                        <a class="card__link" href="#" tabindex="-1">
-                            <img class="card__picture" src="images/main/hotel-2.jpg" width="300" height="212" alt="Скалистое плато">
-                            <h3 class="card__title" lang="en">Villas at Poco Diablo</h3>
+                    <li class="card_item">
+                        <a class="card_link" href="#" tabindex="-1">
+                            <img class="card_picture" src="images/main/hotel-2.jpg" width="300" height="212"
+                                alt="Скалистое плато">
+                            <h3 class="card_title" lang="en">Villas at Poco Diablo</h3>
                         </a>
-                        <div class="card__price">
-                            <span class="card__price">Гостиница</span>
-                            <b class="card__price">От 5000 ₽</b>
+                        <div class="card_price">
+                            <span class="card_price">Гостиница</span>
+                            <b class="card_price">От 5000 ₽</b>
                         </div>
-                        <div class="card__wishlist">
-                            <a class="card__link" href="#">Подробнее</a>
-                            <button class="card__wishlist">В избранном</button>
+                        <div class="card_wishlist card_wishlist_selected">
+                            <a class="card_link" href="#">Подробнее</a>
+                            <button class="card_wishlist card_wishlist_selected">В избранном</button>
                         </div>
-                        <div class="card__level">
-                            <span class="visually__hidden">Четырехзвездочный отель</span>
-                            <p class="card__level__text">Рейтинг:<span> 9,2</span></p>
+                        <div class="card_level">
+                            <span class="visually_hidden">Четырехзвездочный отель</span>
+                            <p class="card_level_text">Рейтинг:<span> 9,2</span></p>
                         </div>
                     </li>
-                    <li class="card__item">
-                        <a class="card__link" href="#" tabindex="-1">
-                            <img class="card__picture" src="images/main/hotel-3.jpg" width="300" height="212" alt="Скалистая возвышенность">
-                            <h3 class="card__title" lang="en">Desert Quail Inn</h3>
+                    <li class="card_item">
+                        <a class="card_link" href="#" tabindex="-1">
+                            <img class="card_picture" src="images/main/hotel-3.jpg" width="300" height="212"
+                                alt="Скалистая возвышенность">
+                            <h3 class="card_title" lang="en">Desert Quail Inn</h3>
                         </a>
-                        <div class="card__price">
-                            <span class="card__price">Гостиница</span>
-                            <b class="card__price">От 2500 ₽</b>
+                        <div class="card_price">
+                            <span class="card_price">Гостиница</span>
+                            <b class="card_price">От 2500 ₽</b>
                         </div>
-                        <div class="card__wishlist">
-                            <a class="card__link" href="#">Подробнее</a>
-                            <button class="card__wishlist">В избранном</button>
+                        <div class="card_wishlist">
+                            <a class="card_link" href="#">Подробнее</a>
+                            <button class="card_wishlist">В избранном</button>
                         </div>
-                        <div class="card__level">
-                            <span class="visually__hidden">Трехзвездочный отель</span>
-                            <p class="card__level__text">Рейтинг:<span> 6,9</span></p>
+                        <div class="card_level">
+                            <span class="visually_hidden">Трехзвездочный отель</span>
+                            <p class="card_level_text">Рейтинг:<span> 6,9</span></p>
                         </div>
                     </li>
-                    <li class="card__item">
-                        <a class="card__link" href="#" tabindex="-1">
-                            <img class="card__picture" src="images/main/hotel-4.jpg" width="300" height="212" alt="Отвесная скала под звездным небом">
-                            <h3 class="card__title" lang="en">GreenTree Inn</h3>
+                    <li class="card_item">
+                        <a class="card_link" href="#" tabindex="-1">
+                            <img class="card_picture" src="images/main/hotel-4.jpg" width="300" height="212"
+                                alt="Отвесная скала под звездным небом">
+                            <h3 class="card_title" lang="en">GreenTree Inn</h3>
                         </a>
-                        <div class="card__price">
-                            <span class="card__price">Гостиница</span>
-                            <b class="card__price">От 1500 ₽</b>
+                        <div class="card_price">
+                            <span class="card_price">Гостиница</span>
+                            <b class="card_price">От 1500 ₽</b>
                         </div>
-                        <div class="card__wishlist">
-                            <a class="card__link" href="#">Подробнее</a>
-                            <button class="card__wishlist">В избранном</button>
+                        <div class="card_wishlist">
+                            <a class="card_link" href="#">Подробнее</a>
+                            <button class="card_wishlist">В избранном</button>
                         </div>
-                        <div class="card__level">
-                            <span class="visually__hidden">Двухзвездочный отель</span>
-                            <p class="card__level__text">Рейтинг:<span> 5</span></p>
+                        <div class="card_level">
+                            <span class="visually_hidden">Двухзвездочный отель</span>
+                            <p class="card_level_text">Рейтинг:<span> 5</span></p>
                         </div>
                     </li>
                 </ul>
                 <ul class="pagination">
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#" aria-current="page">1</a>
+                    <li class="pagination_item">
+                        <a class="pagination_link_first" href="#" aria-current="page">1</a>
                     </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#">2</a>
+                    <li class="pagination_item">
+                        <a class="pagination_link" href="#">2</a>
                     </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#">3</a>
+                    <li class="pagination_item">
+                        <a class="pagination_link" href="#">3</a>
                     </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#">4</a>
+                    <li class="pagination_item">
+                        <a class="pagination_link" href="#">4</a>
                     </li>
-                    <li class="pagination__item">
-                        <span class="pagination__icon">...</span>
+                    <li class="pagination_item">
+                        <span class="pagination_icon">...</span>
                     </li>
-                    <li class="pagination__item">
-                        <a class="pagination__link" href="#">10</a>
+                    <li class="pagination_item">
+                        <a class="pagination_link" href="#">10</a>
                     </li>
                 </ul>
             </section>
         </main>
         <footer>
-            <section class="follow">
-                <h2 class="follow__title">Подпишитесь на рассылку</h2>
-                <p class="follow__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-                <form class="follow__button" action="https://echo.htmlacademy.ru/" method="post">
-                    <label for="user__email"></label>
-                    <input class="user__email" placeholder="Ваш e-mail" tipe="email" name="user__email" id="user__email"
+            <section class="follow_form">
+                <h2 class="follow_title">Подпишитесь на рассылку</h2>
+                <p class="follow_text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+                <form class="follow_form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="user_email"></label>
+                    <input class="user_email" placeholder="Ваш e-mail" tipe="email" name="user_email" id="user_email"
                         required>
-                    <button class="footer__button" type="submit">
-                        <span class="footer__icon">Подписаться</span>
+                    <button class="footer_button" type="submit">
+                        <span class="footer_icon">Подписаться</span>
                     </button>
                 </form>
             </section>
-            <section class="footer__social">
-                <h2 class="visually__hidden">Контакты</h2>
-                <p class="visually__hidden">Контактная информация</p>
-                <ul class="footer__list">
-                    <li class="footer__icon">
-                        <a class="footer__button" href="https://vk.com/htmlacademy">
-                            <span class="visually__hidden">Вконтакте</span>
+            <section class="footer_social">
+                <h2 class="visually_hidden">Контакты</h2>
+                <ul class="footer_list">
+                    <li class="footer_icon">
+                        <a class="footer_button_simbol" href="https://vk.com/htmlacademy">
+                            <span class="visually_hidden">Вконтакте</span>
                         </a>
                     </li>
-                    <li class="footer__icon">
-                        <a class="footer__button" href="https://t.me/htmlacademy">
-                            <span class="visually__hidden">Телеграм</span>
+                    <li class="footer_icon">
+                        <a class="footer_button_simbol" href="https://t.me/htmlacademy">
+                            <span class="visually_hidden">Телеграм</span>
                         </a>
                     </li>
-                    <li class="footer__icon">
-                        <a class="footer__button" href="https://www.youtube.com/user/htmlacademyru">
-                            <span class="visually__hidden">Ютуб</span>
+                    <li class="footer_icon">
+                        <a class="footer_button_simbol" href="https://www.youtube.com/user/htmlacademyru">
+                            <span class="visually_hidden">Ютуб</span>
                         </a>
                     </li>
-                    <li class="footer__phone">
-                        <a class="footer__phone" href="tel:88128121212"><span class="visually__hidden">Позвоните по
+                    <li class="footer_phone">
+                        <a class="footer_phone" href="tel:88128121212"><span class="visually_hidden">Позвоните по
                                 номеру</span>+7
                             (812) 812-12-12</a>
                     </li>
                 </ul>
-                <p class="footer__text">
-                    <a class="footer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-                        <span class="visually__hidden">htmlacademy</span>
+                <p class="footer_text">
+                    <a class="footer_link" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <span class="visually_hidden">htmlacademy</span>
                     </a>
                 </p>
             </section>

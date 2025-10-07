@@ -1,0 +1,451 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format=("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format=("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+}
+
+/*шапка---------------------------------------------------------------------*/
+
+.like_number {
+    width: 11px;
+    height: 10px;
+    font-family: inherit;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #FFFFFF;
+    background-color: rgb(125, 181, 79);
+}
+
+.page_header {
+    color: #000000;
+    background-color: #ffffff;
+
+}
+
+.navigation_link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation_link.button {
+    width: 160px;
+    height: 36px;
+    color: #FFFFFF;
+    background: #756157;
+}
+
+.main_index_top {
+    text-align: center;
+
+    background-color: #3F5E72;
+    color: #000000;
+    background-image: url("../images/main/edging.svg"), url("../images/main/canyon.jpg");
+    background-size: 100% auto, cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+
+}
+
+/*перечесление преимуществ-----------------------------------------------------------------*/
+.advantages {
+    text-align: center;
+}
+
+.advantages_block h3 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages_block p {
+    font-style: normal;
+    text-align: center;
+
+    color: #333333;
+}
+
+.advantages_dark_block {
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+
+.advantages_light_block {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.083);
+}
+
+.advantages_medium_block {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages_background_block {
+    color: #000000;
+    background-color: FFFFFF;
+}
+
+.white_text.advantages_dark_block {
+    color: #ffffff;
+}
+
+.advantages_title {
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+.advantages_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/*-------------------------------------------------*/
+.todo_field {
+    text-align: center;
+}
+
+.todo_field h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.todo_field p {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #333333;
+}
+
+.todo_button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: rgb(117, 97, 87);
+}
+
+/*----------------------------------------------------------------------------*/
+.inner_header {
+    text-align: center;
+
+    background-image: url("../images/main/hotel_background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: #3F5E72;
+    color: #FFFFFF;
+}
+
+.inner_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+
+    color: #FFFFFF;
+}
+
+.breadcrumbs_link a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.filter_list_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.control_input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+.control_button {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: none;
+}
+
+.active_button {
+    background-color: #82B3D3;
+}
+
+.catalog_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.card_item {
+    width: 340px;
+    height: 438px;
+
+    border-color: #E5E5E5;
+}
+
+.card_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+
+    color: #000000;
+}
+
+.card_price {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+}
+
+.card_link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    background-color: rgb(117, 97, 87);
+}
+
+.card_level_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #333333;
+    background-color: rgb(242, 242, 242);
+}
+
+.card_wishlist button {
+    background-color: rgb(130, 179, 211);
+}
+
+.card_wishlist_selected button {
+    background-color: rgb(125, 181, 79);
+}
+
+
+.pagination_link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    background-color: rgb(130, 179, 211);
+}
+
+.pagination_link_first {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+/*-------------background-color: как выставить если в фигме как белый)---------------------------*/
+.catalog_filter_text {
+    font-style: normal;
+
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.price_filter_placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.price_filter_input {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+
+    color: #000000;
+}
+
+/*footer-------------------------------------------------------------*/
+
+.follow_form {
+    text-align: center;
+
+    background-color: #ffffff;
+    color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.follow_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.follow_text {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.follow_form_special {
+    background-image: url("../images/header_&_footer/footer.jpg");
+    background-color: #3F5E72;
+}
+
+.follow_title_special {
+    color: #ffffff;
+}
+
+.follow_text_special {
+    color: #ffffff;
+}
+
+.user_email {
+    width: 452px;
+    height: 52px;
+
+    background: #F2F2F2;
+
+}
+
+.footer_button {
+    width: 232px;
+    height: 52px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: rgb(130, 179, 211);
+}
+
+.footer_social a {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+
+
+}
