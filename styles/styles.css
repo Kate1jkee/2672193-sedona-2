@@ -25,10 +25,22 @@ body {
     line-height: 21px;
     font-weight: 400;
     height: 100%;
-    min-height: 100%;
+
     color: #000000;
     background-color: #F2F2F2;
 
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
 }
 
 .main_index {
@@ -50,12 +62,11 @@ body {
 }
 
 .main_container {
-    display: flex;
+   display: flex;
     flex-direction: column;
+    min-height: 100%;
     margin: 0 auto;
     width: 1200px;
-    height: auto;
-
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
 }
@@ -63,52 +74,46 @@ body {
 /*header------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .page_header {
-    display: flex;
-    gap: 28px;
-width: 1060px;
-margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-grow: 1;
+  padding-left: 70px;
+  padding-right: 70px;
     color: #000000;
-    background-color: #ffffff;
+
 }
 
 .navigation_page {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
+    flex-grow: 1;
+    align-items: center;
 }
 
 .navigation_list {
     display: flex;
-    width: 465px;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
     gap: 32px;
     flex-wrap: wrap;
-    /* outline: 1px solid green; */
 }
-
+.user_container {
+  display: flex;
+    justify-content: space-between;
+gap: 20px;
+}
 .navigation_item {
     list-style: none;
 }
 
-.navigation_right {
-    display: flex;
-    width: 360px;
-    gap: 33px;
-    flex-wrap: wrap;
-    align-items: center;
-    /* outline: 1px solid purple; */
-}
-
 .navigation_user {
     display: flex;
-    gap: 25px;
     margin: 0;
     padding: 0;
-    margin-left: auto;
-    /* outline: 1px solid blue; */
+align-items: center;
+flex-wrap: wrap;
 }
 
 .navigation_link {
@@ -137,21 +142,25 @@ margin: 0 auto;
     background-color: rgb(125, 181, 79);
 }
 
-.navigation_button {
-    width: 160px;
-    height: 36px;
+.navigation_wish {
+    max-width: 160px;
     font-family: inherit;
     font-style: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
     background: #756157;
-}
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
+    height: min-content;
+    border-radius: 4px;
 
+}
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .main_index_picture {
     display: block;
@@ -167,6 +176,9 @@ margin: 0 auto;
     background-size: 100% auto, cover;
     background-repeat: no-repeat;
     background-position: bottom, center;
+    padding-top: 51px;
+    padding-bottom: 82px;
+
 }
 
 /*section class="advantages"------------------------------------------------------------------------------------------------------------------------------------*/
@@ -199,16 +211,11 @@ margin: 0 auto;
 }
 
 .advantages_list {
+  list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-.advantages_item_special {
-    list-style: none;
-    width: 1200px;
 }
 
 .advantages_block_title {
@@ -225,8 +232,12 @@ margin: 0 auto;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin: 0;
 }
+.advantages_dark_description {
+  margin: 0;
 
+}
 .advantages_block_description {
     margin: 0;
     padding: 0;
@@ -239,21 +250,31 @@ margin: 0 auto;
 .advantages_item {
     list-style: none;
     width: 400px;
+
 }
 
 .advantages_dark_block_text {
-    flex-grow: 1;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+
 }
 
-.advantages_dark_block {
-    display: flex;
+.advantages_item_special {
+ display: flex;
     justify-content: space-between;
+    flex-grow: 1;
     color: #ffffff;
     background-color: #82B3D3;
-}
 
+}
 .advantages_light_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     color: #000000;
     background-color: rgba(131, 179, 211, 0.12);
 }
@@ -330,6 +351,10 @@ margin: 0 auto;
     line-height: 36px;
     text-transform: uppercase;
     margin-bottom: 96px;
+    border: none;
+    min-width: 376px;
+    border-radius: 4px;
+    padding: 8px 50px;
 
     color: #FFFFFF;
     background-color: rgb(117, 97, 87);
@@ -337,49 +362,33 @@ margin: 0 auto;
 
 /*catalog----------------------------------------------------------------------------------------------------------------------*/
 .inner_header {
-    text-align: left;
 
+    text-align: left;
     background-image: url("../images/main/hotel_background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     background-color: #3F5E72;
     color: #FFFFFF;
-}
 
+    padding: 70px;
+    padding-top: 35px;
+}
 .inner_title {
     margin: 0;
-    margin-top: 35px;
-    margin-left: 70px;
-    margin-bottom: 8px;
-    text-align: left;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
-
-    color: #FFFFFF;
+    margin-bottom: 8px;
 }
-
 .breadcrumbs {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: 70px;
     margin-bottom: 40px;
 }
-
-.filter_list {
-    display: flex;
-    justify-content: space-between;
-    gap: 140px;
-    padding-bottom: 70px;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
 .breadcrumbs_link {
     font-style: normal;
     font-weight: 400;
@@ -389,6 +398,43 @@ margin: 0 auto;
 
     color: #FFFFFF;
 }
+.filter_list {
+    display: flex;
+    gap: 70px;
+
+}
+
+.filter_list_options {
+  display: flex;
+  flex-direction: column;
+ margin: 0;
+ padding: 0;
+ border: none;
+ min-width: 150px;
+}
+
+.price_filter_field {
+   margin: 0;
+ padding: 0;
+ border: none;
+min-width: 289px;
+padding-left: 70px;
+}
+.price_filter_range {
+   margin: 0;
+ padding: 0;
+ border: none;
+min-width: 289px;
+
+}
+.price_filter_button {
+   margin: 0;
+ padding: 0;
+ border: none;
+ padding-top: 56px;
+
+
+}
 
 .filter_list_title {
     font-style: normal;
@@ -396,18 +442,12 @@ margin: 0 auto;
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
-    padding: 0;
     margin-bottom: 32px;
-    color: #FFFFFF;
-}
-
-.price_filter_range {
-    display: flex;
-    flex-direction: column;
-
 
 }
-
+.control {
+  margin-bottom: 16px;
+}
 .control_input {
     font-style: normal;
     font-weight: 400;
@@ -415,10 +455,8 @@ margin: 0 auto;
     line-height: 23px;
 
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-}
 
+}
 .control_button {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -427,11 +465,15 @@ margin: 0 auto;
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 4px;
 
     color: #FFFFFF;
     background: none;
+    margin-bottom: 32px;
+    border: none;
+    width: 191px;
+    padding: 8px 50px;
 }
-
 .active_button {
     background-color: #82B3D3;
 }
@@ -441,8 +483,10 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin: 0;
-    margin-top: 50px;
-    margin-bottom: 40px;
+   padding-top: 50px;
+   padding-left: 70px;
+   padding-right: 70px;
+   padding-bottom: 40px;
 }
 
 .catalog_title {
@@ -451,6 +495,16 @@ margin: 0 auto;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0;
+}
+.catalog_text {
+  max-height: 49px;
+}
+
+.catalog_filter {
+  max-width: 160px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog_filter_text {
@@ -458,6 +512,9 @@ margin: 0 auto;
 
     color: #333333;
     background-color: #ffffff;
+    min-width: 292px;
+    margin-left: auto;
+    margin-right: 70px;
 }
 
 .price_filter_placeholder {
@@ -480,43 +537,10 @@ margin: 0 auto;
     color: #000000;
 }
 
-.filter_options {
-    /* outline: 1px solid yellow;*/
-    display: flex;
-    justify-content: space-between;
-    gap: 70px;
-}
-
-.filter_list_options {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.price_filter {
-    display: flex;
-    justify-content: space-between;
-    gap: 70px;
-
-    /* outline: 1px solid purple; */
-}
-
-.price_filter_button {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-top: 56px;
-}
-
 /*--карточки отелей----------------------------------------------------------------------------------------------------------------------------------------*/
-
-.width_container {
-    width: 1060px;
-    margin: 0 auto;
+.cards {
+  padding-left: 70px;
+   padding-right: 70px;
 }
 .card_list {
     list-style: none;
@@ -534,7 +558,6 @@ margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 300px;
-    align-items: flex-start;
     padding: 20px;
     gap: 16px;
     border: 1px solid #E6E6E6;
@@ -594,6 +617,7 @@ margin-bottom: 20px;
     width: 140px;
     color: #FFFFFF;
     background: #756157;
+    border-radius: 4px;
 }
 
 .card_picture {
@@ -629,6 +653,7 @@ width: 140px;
     width: 140px;
     color: #FFFFFF;
     background-color: rgb(130, 179, 211);
+    border-radius: 4px;
 }
 
 .card_wishlist_button_selected {
@@ -636,39 +661,54 @@ width: 140px;
     background-color: rgb(125, 181, 79);
 }
 
+/*--------------------------------------------------------------------------------------------------*/
+
+.pagination {
+    list-style: none;
+    display: flex;
+     align-items: center;
+    gap: 8px;
+    padding: 0;
+}
 
 .pagination_link {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 36px;
-    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
-    background-color: rgb(130, 179, 211);
+
+}
+.pagination_link_special {
+    color: #000000;
 }
 
-.pagination_link_first {
+.pagination_item {
+  min-width: 60px;
+  min-height: 60px;
+    background-color: rgb(130, 179, 211);
+    border-radius: 4px;
+}
+.pagination_item_special {
+
+background-color: #F2F2F2;
+    color: #000000;
+}
+.pagination_icon {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-
-    color: #000000;
+    color: #FFFFFF;
 }
-
-.pagination {
-    list-style: none;
-    display: flex;
-    gap: 8px;
-    padding: 0;
-}
-
 /*footer-------------------------------------------------------------*/
+
+.page_footer {
+  margin-top: auto;
+}
 
 .follow_form {
     padding-top: 96px;
@@ -678,7 +718,8 @@ width: 140px;
     color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
-
+padding-left: 258px;
+padding-right: 258px;
 }
 
 .follow_title {
@@ -718,17 +759,15 @@ width: 140px;
 }
 
 .user_email {
+padding: 0;
+    border: none;
     width: 452px;
     height: 52px;
-
     background: #F2F2F2;
 }
 
 .subscribe_form {
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
-
 }
 
 .subscribe_button {
@@ -748,10 +787,6 @@ width: 140px;
     background-color: rgb(130, 179, 211);
 }
 
-.user_email {
-    padding: 0;
-    border: none;
-}
 
 .footer_phone {
     font-family: inherit;
@@ -761,11 +796,9 @@ width: 140px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-width: 720px;
     color: #000000;
 }
 .footer_symbol_academy {
-     width: 115px;
  font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -789,23 +822,20 @@ width: 720px;
 .footer_social {
     display: flex;
     padding: 0;
- margin: 0 auto;
-    width: 1060px;
-
     justify-content: space-between;
+      padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 
 }
 
 .footer_list {
     display: flex;
-     width: 190px;
      flex-wrap: wrap;
     gap: 26px;
     list-style: none;
-
-}
-
-.page_footer {
-    margin-top: 0 auto;
+    margin: 0;
+    padding: 0;
 
 }
