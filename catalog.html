@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
-  <body>
+  <body class="main_page">
     <div class="main_container">
 
       <header class="page_header">
@@ -26,10 +27,10 @@
               <a class="navigation_link navigation_link_current_catalog" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <div class="user_container">
+         <div class="user_container">
             <ul class="navigation_user">
               <li class="navigation_user_item">
-                <a class="navigation_link" href="#">
+                <a class="navigation_link navigation_link_user" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
@@ -39,7 +40,7 @@
                 </a>
               </li>
               <li class="navigation_user_item">
-                <a class="navigation_link navigation_link_container" href="#">
+                <a class="navigation_link navigation_link_user navigation_link_container" href="#">
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
@@ -117,20 +118,20 @@
               <legend class="filter_list_title">Стоимость, ₽:</legend>
               <div class="price_filter_input-wrapper">
                 <div class="price_filter">
-                  <input type="number" name="min_cost" class="price_filter_input price_filter_input_min" type="number" value="0" min="0"/>
+                  <input type="number" name="min_cost" class="price_filter_input price_filter_input_min" type="number" value="0" min="0" placeholder="0"/>
                   <span class="price_filter_placeholder">от</span>
                 </div>
                 <div class="price_filter">
                   <input type="number" name="max_cost" class="price_filter_input price_filter_input_max" type="number" value="9000"
-                    min="0"/>
+                    min="0" placeholder="9000"/>
                   <span class="price_filter_placeholder">до</span>
                 </div>
               </div>
               <div class="price_track">
                 <div class="price_track_scale">
                   <div class="price_track_scale_current" style="right:63px; width:216px">
-                    <button class="price_track_button track_button_min" type="button"></button>
-                    <button class="price_track_button track_button_max" type="button"></button>
+                    <button class="price_track_button track_button_min" type="button"><span class="visually_hidden">Регулиование минимального значения цены</span></button>
+                    <button class="price_track_button track_button_max" type="button"><span class="visually_hidden">Регулиование максимального значения цены</span></button>
                   </div>
                 </div>
               </div>
@@ -192,24 +193,24 @@
           </div>
           <ul class="card_list">
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel-1.jpg" width="300" height="212" alt="Ущелье">
+              <img class="card_picture" src="images/main/hotel1.jpg" width="300" height="212" alt="Ущелье">
               <h3 class="card_title" lang="en">Amara Resort & Spa</h3>
               <span class="card_price_object">Гостиница</span>
-              <b class="card_price_value">От 4000 ₽</b>
+              <b class="card_price_value">От <span>4000</span> ₽</b>
               <a class="card_link" href="#">Подробнее</a>
-              <button class="card_wishlist_button">В избранное</button>
+              <button class="card_wishlist_button" type="button">В избранное</button>
               <span class="decorative_stars decorative_stars_four">
                 <span class="visually_hidden">Четырехзвездочный отель</span>
               </span>
               <p class="card_level_text">Рейтинг:<span> 8,5</span></p>
             </li>
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel-2.jpg" width="300" height="212" alt="Скалистое плато">
+              <img class="card_picture" src="images/main/hotel2.jpg" width="300" height="212" alt="Скалистое плато">
               <h3 class="card_title" lang="en">Villas at Poco Diablo</h3>
               <span class="card_price_object">Гостиница</span>
-              <b class="card_price_value">От 5000 ₽</b>
+              <b class="card_price_value">От <span>5000</span> ₽</b>
               <a class="card_link" href="#">Подробнее</a>
-              <button class="card_wishlist_button card_wishlist_button_selected">В
+              <button class="card_wishlist_button card_wishlist_button_selected" type="button">В
                 избранном</button>
               <span class="decorative_stars decorative_stars_four">
                 <span class="visually_hidden">Четырехзвездочный отель</span>
@@ -217,26 +218,26 @@
               <p class="card_level_text">Рейтинг:<span> 9,2</span></p>
             </li>
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel-3.jpg" width="300" height="212"
+              <img class="card_picture" src="images/main/hotel3.jpg" width="300" height="212"
                 alt="Скалистая возвышенность">
               <h3 class="card_title" lang="en">Desert Quail Inn</h3>
               <span class="card_price_object">Гостиница</span>
-              <b class="card_price_value">От 2500 ₽</b>
+              <b class="card_price_value">От <span>2500</span> ₽</b>
               <a class="card_link" href="#">Подробнее</a>
-              <button class="card_wishlist_button">В избранное</button>
+              <button class="card_wishlist_button" type="button">В избранное</button>
               <span class="decorative_stars decorative_stars_free">
                 <span class="visually_hidden">Трехзвездочный отель</span>
               </span>
               <p class="card_level_text">Рейтинг:<span> 6,9</span></p>
             </li>
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel-4.jpg" width="300" height="212"
+              <img class="card_picture" src="images/main/hotel4.jpg" width="300" height="212"
                 alt="Отвесная скала под звездным небом">
               <h3 class="card_title" lang="en">GreenTree Inn</h3>
               <span class="card_price_object">Гостиница</span>
-              <b class="card_price_value">От 1500 ₽</b>
+              <b class="card_price_value">От <span>1500</span> ₽</b>
               <a class="card_link" href="#">Подробнее</a>
-              <button class="card_wishlist_button">В избранное</button>
+              <button class="card_wishlist_button" type="button">В избранное</button>
               <span class="decorative_stars decorative_stars_two">
                 <span class="visually_hidden">Двухзвездочный отель</span>
               </span>
@@ -354,56 +355,6 @@
         </section>
       </footer>
     </div>
-    </div>
-     <div class="modal_container modal-container-close">
-      <div class="modal modal_auth">
-        <button class="modal_close_button">
-          <span class="visually_hidden">Закрыть</span>
-        </button>
-        <section class="modal_content">
-          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
-          <form class="modal_form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="arrival_field" class="booking_label">Дата заезда:
-              <span class="input_container">
-                <input class="arrival_field" id="arrival_field" name="arrival" type="text"
-                  placeholder="Укажите желаемую дату заселения" value="27 апреля 2020" />
-                <span class="warning_text">Мы не можем отправить вас в прошлое.</span>
-              </span>
-            </label>
-            <label for="departure_field" class="booking_label">Дата выезда:
-              <span class="input_container">
-                <input class="departure_field" id="departure_field" name="departure" type="text"
-                  placeholder="Укажите желаемую дату выселения" value="1 сентября 2023" />
-                <span class="inform_text">На эти даты есть свободные номера. Пока есть.</span>
-              </span>
-            </label>
-            <div class="ages">
-              <label for="adults_field" class="booking_label">
-                <span class="arrow_text_adults">Взрослые:</span>
-                <button class="arrow arrow-down"></button>
-                <input class="adults_field" id="adults_field" name="adults" type="number" value="2" min="1" max="99" />
-                <button class="arrow arrow-up"></button>
-              </label>
-              <label for="children_field" class="booking_label">
-                <span class="arrow_text_children">Дети:<span
-                      class="popover popover_cart popover_open">
-                      <p class="popover_content">Укажите количество детей, которые будут с вами, возраст которых от 6 до
-                        18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                    </span>
-                    <span class="pointer_information"></span>
-                    <span class="decorative_pointer"></span>
-
-                </span>
-                <button class="arrow arrow-down"></button>
-                <input class="children_field" id="children_field" name="children" type="number" value="2" min="0"
-                  max="99" />
-                <button class="arrow arrow-up"></button>
-              </label>
-            </div>
-          </form>
-          <button class="start_searching" type="submit">Найти</button>
-        </section>
-      </div>
     </div>
   </body>
 
