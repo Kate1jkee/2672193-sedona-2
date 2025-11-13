@@ -10,8 +10,7 @@
 
   <body class="main_page">
     <div class="main_container">
-
-      <header class="page_header">
+      <header class="page_header" data-test="header">
         <a class="main_logo" href="index.html" aria-current="page">
           <img class="page_screen" src="images/header_footer/site_logo.svg" width="140" height="70" alt="Логотип сайта">
         </a>
@@ -24,10 +23,10 @@
               <a class="navigation_link" href="#">О Cедоне</a>
             </li>
             <li class="navigation_item">
-              <a class="navigation_link navigation_link_current_catalog" href="catalog.html">Гостиницы</a>
+              <a class="navigation_link link_current_catalog" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-         <div class="user_container">
+          <div class="user_container">
             <ul class="navigation_user">
               <li class="navigation_user_item">
                 <a class="navigation_link navigation_link_user" href="#">
@@ -57,7 +56,7 @@
           </div>
         </nav>
       </header>
-      <main class="main_inner">
+      <main class="main_inner" data-test="main">
         <section class="inner_header">
           <h1 class="inner_title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -76,7 +75,7 @@
             </li>
           </ul>
           <h2 class="visually_hidden">Перечень фильтров для поиска отелей</h2>
-          <form class="filter_list" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter_list" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="filter_list_options">
               <legend class="filter_list_title">Инфраструктура:</legend>
               <label class="control">
@@ -118,20 +117,23 @@
               <legend class="filter_list_title">Стоимость, ₽:</legend>
               <div class="price_filter_input-wrapper">
                 <div class="price_filter">
-                  <input type="number" name="min_cost" class="price_filter_input price_filter_input_min" type="number" value="0" min="0" placeholder="0"/>
+                  <input class="price_filter_input price_filter_input_min" type="number" name="min_cost"
+                    value="0" min="0" placeholder="0">
                   <span class="price_filter_placeholder">от</span>
                 </div>
                 <div class="price_filter">
-                  <input type="number" name="max_cost" class="price_filter_input price_filter_input_max" type="number" value="9000"
-                    min="0" placeholder="9000"/>
+                  <input class="price_filter_input price_filter_input_max" type="number" name="max_cost"
+                    value="9000" min="0" placeholder="9000">
                   <span class="price_filter_placeholder">до</span>
                 </div>
               </div>
               <div class="price_track">
                 <div class="price_track_scale">
                   <div class="price_track_scale_current" style="right:63px; width:216px">
-                    <button class="price_track_button track_button_min" type="button"><span class="visually_hidden">Регулиование минимального значения цены</span></button>
-                    <button class="price_track_button track_button_max" type="button"><span class="visually_hidden">Регулиование максимального значения цены</span></button>
+                    <button class="price_track_button track_button_min" type="button"><span
+                        class="visually_hidden">Регулиование минимального значения цены</span></button>
+                    <button class="price_track_button track_button_max" type="button"><span
+                        class="visually_hidden">Регулиование максимального значения цены</span></button>
                   </div>
                 </div>
               </div>
@@ -142,8 +144,8 @@
             </div>
           </form>
         </section>
-        <section class="catalog_section">
-          <h class="visually_hidden">Раздел выбора отеля</h>
+        <section class="catalog_section" data-test="catalog">
+          <h2 class="visually_hidden">Раздел выбора отеля</h2>
           <div class="catalog">
             <h2 class="catalog_title">Найдено гостиниц:<span class=catalog_text> 38</span></h2>
             <select class="catalog_option" aria-label="Сортировка">
@@ -267,7 +269,7 @@
         </section>
       </main>
       <footer class="page_footer">
-        <section class="follow_form">
+        <section class="follow_form" data-test="subscribe">
           <h2 class="follow_title">Подпишитесь на рассылку</h2>
           <p class="follow_description">Только полезная информация и никакого спама,<br>
             честное
@@ -278,7 +280,7 @@
             </button>
           </form>
         </section>
-        <section class="footer_social">
+        <section class="footer_social" data-test="footer">
           <h2 class="visually_hidden">Контакты</h2>
           <ul class="footer_list">
             <li class="footer_icon">
@@ -355,7 +357,5 @@
         </section>
       </footer>
     </div>
-    </div>
   </body>
-
 </html>
